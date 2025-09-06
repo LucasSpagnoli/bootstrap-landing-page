@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurora Tours</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand text-light" href="#">AuroraTours</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" aria-current="page" href="#package">Pacotes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#faq">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="modal fade" tabindex="-1" id="book-modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Agende uma viagem</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form action="#">
+                            <div class="row g-2">
+
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="email" name="email adress input" class="form-control" id="email"
+                                            placeholder="Email">
+                                        <label for="email">Email</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <select class="form-select" name="select tour" id="select">
+                                            <option>Tromso, Noruega</option>
+                                            <option>Reykjavik, Islândia</option>
+                                            <option>Yukon, Canadá</option>
+                                        </select>
+                                        <label for="select">Opções de tour</label>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="carouselExampleCaptions" class="carousel slide mt-4">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active carousel-container">
+                    <img src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="d-block w-100 carousel-image" alt="Imagem 1 do carrosel de auroras">
+
+                    <div class="carousel-caption top-0 mt-5">
+                        <p class="fs-5 mt-5 text-uppercase">Descubra um outro mundo</p>
+                        <h1 class="display-1 fw-bold mb-4">Aurora Tours</h1>
+                        <button type="button" class="btn btn-primary px-3 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                            data-bs-target="#book-modal">Agende um tour</button>
+                    </div>
+
+                </div>
+
+                <div class="carousel-item carousel-container">
+                    <img src="https://images.unsplash.com/photo-1516466723877-e4ec1d736c8a?q=80&w=1234&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="d-block w-100 carousel-image" alt="Imagem 2 do carrosel de auroras">
+
+                    <div class="carousel-caption top-0 mt-5">
+                        <p class="fs-5 mt-5 text-uppercase">Descubra um outro mundo</p>
+                        <h1 class="display-1 fw-bold mb-4">Aurora Tours</h1>
+                        <button type="button" class="btn btn-primary px-3 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                            data-bs-target="#book-modal">Agende um tour</button>
+                    </div>
+
+                </div>
+
+                <div class="carousel-item carousel-container">
+                    <img src="https://images.unsplash.com/photo-1568607689150-17e625c1586e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="d-block w-100 carousel-image" alt="Imagem 3 do carrosel de auroras">
+
+                    <div class="carousel-caption top-0 mt-5">
+                        <p class="fs-5 mt-5 text-uppercase">Descubra um outro mundo</p>
+                        <h1 class="display-1 fw-bold mb-4">Aurora Tours</h1>
+                        <button type="button" class="btn btn-primary px-3 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                            data-bs-target="#book-modal">Agende um tour</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </section>
+
+        <section class="overview">
+            <!-- Usando flexbox
+            <div class="container h-100 d-flex align-items-center justify-content-md-around flex-md-row justify-content-sm-between flex-sm-column py-sm-3 fs-5">
+                <div>
+                    <i class="bi bi-airplane-fill me-2"></i>
+                    3 amazing destinations
+                </div>
+                <div>
+                    <i class="bi bi-wallet-fill me-2"></i>
+                    Only pay 5% up front
+                </div>
+                <div>
+                    <i class="bi bi-patch-check-fill me-2"></i>
+                    1000's of customers
+                </div>
+            </div>
+            -->
+            <!-- Usando grid -->
+            <div class="container h-100 d-flex align-items-center">
+                <div class="row w-100 text-center fs-5">
+                    <div class="col-md my-2 my-md-0">
+                        <i class="bi bi-airplane-fill me-2"></i>
+                        3 destinos incríveis
+                    </div>
+                    <div class="col-md my-2 my-md-0">
+                        <i class="bi bi-wallet-fill me-2"></i>
+                        Pague apenas 5% adiantado
+                    </div>
+                    <div class="col-md my-2 my-md-0">
+                        <i class="bi bi-patch-check-fill me-2"></i>
+                        Milhares de clientes
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="package" class="pt-md-5 pt-sm-2">
+            <h2 class="text-center my-2">Pacotes</h2>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg py-3">
+                        <div class="card">
+                            <img src="https://images.unsplash.com/photo-1588361959742-a99d41a6164a?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                class="card-img-top" alt="Aurora Boreal Tromso">
+                            <div class="card-body">
+                                <h5 class="card-title">Tromsø, Noruega</h5>
+                                <p class="card-text">Descubra a aurora boreal em uma das cidades mais ao norte do mundo.
+                                </p>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#book-modal">Book
+                                    tour</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg py-3">
+                        <div class="card">
+                            <img src="https://images.unsplash.com/photo-1654023954706-3ec19dc0a5c1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                class="card-img-top" alt="Reykjavik Iceland tour">
+                            <div class="card-body">
+                                <h5 class="card-title">Reykjavik, Islândia</h5>
+                                <p class="card-text">Explore gêiseres, cachoeiras e paisagens vulcânicas únicas.</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#book-modal">Book
+                                    Tour</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg py-3">
+                        <div class="card">
+                            <img src="https://images.unsplash.com/photo-1549633760-e91f5397021b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                class="card-img-top" alt="Yukon Canada tour">
+                            <div class="card-body">
+                                <h5 class="card-title">Yukon, Canadá</h5>
+                                <p class="card-text">Aventure-se em trilhas selvagens e cenários de tirar o fôlego.</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#book-modal">Book
+                                    Tour</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="faq" class="py-md-5 py-2">
+    <h2 class="my-5 text-center">FAQ</h2>
+    <div class="container w-75">
+        <div class="accordion accordion-flush mx-auto" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                        aria-controls="flush-collapseOne">
+                        Quanto tempo dura a viagem?
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        As viagens geralmente variam entre 5 e 10 dias, dependendo do destino e do pacote escolhido.
+                        Também oferecemos opções mais curtas de final de semana.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                        aria-controls="flush-collapseTwo">
+                        Posso cancelar após a reserva?
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        Sim, o cancelamento é possível até 7 dias antes da partida com reembolso integral.
+                        Cancelamentos mais próximos da data podem ter taxas, conforme nossa política.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                        aria-controls="flush-collapseThree">
+                        O voo está incluso?
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        Os voos não estão inclusos por padrão. No entanto, oferecemos pacotes com passagens aéreas
+                        mediante solicitação, para que você escolha a melhor opção.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFour" aria-expanded="false"
+                        aria-controls="flush-collapseFour">
+                        O que devo levar na viagem?
+                    </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        Recomendamos levar roupas adequadas ao clima do destino, documentos pessoais,
+                        seguro de viagem e itens de uso pessoal. Uma câmera também é essencial
+                        para registrar os melhores momentos!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    </main>
+
+    <footer class="bg-dark py-5 mt-5">
+        <div class="container text-light text-center">
+            <p class="display-5 mb-3">Aurora Tours</p>
+            <small class="text-white-50">&copy; Copyright by Lucas Spagnoli. All rights reserved.</small>
+        </div>
+    </footer>
+</body>
+
+</html>
