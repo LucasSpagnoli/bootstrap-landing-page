@@ -21,3 +21,4 @@ Landing page responsiva criada com **Bootstrap 5** para promover pacotes de viag
 
 
 ## 🔗 Link para o site
+https://lucasspagnoli.github.io/bootstrap-landing-page/
